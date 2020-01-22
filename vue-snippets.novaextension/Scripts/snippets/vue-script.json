@@ -1,0 +1,313 @@
+{
+  "Vue Data": {
+    "prefix": "vdata",
+    "body": ["data() {", "\treturn {", "\t\t$[key]: $[value]", "\t}", "},"],
+    "description": "Vue Component Data"
+  },
+  "Vue Methods": {
+    "prefix": "vmethod",
+    "body": ["methods: {", "\t$[name]() {", "\t\t$[]", "\t}", "},"],
+    "description": "vue method"
+  },
+  "Vue Computed": {
+    "prefix": "vcomputed",
+    "body": [
+      "computed: {",
+      "\t$[name]() {",
+      "\t\treturn this.$[data]",
+      "\t}",
+      "},"
+    ],
+    "description": "computed value"
+  },
+  "Vue Lifecycle beforeCreate": {
+    "prefix": "vbeforecreate",
+    "body": ["beforeCreate () {", "\t$[];", "},"],
+    "description": "beforeCreate lifecycle method"
+  },
+  "Vue Lifecycle created": {
+    "prefix": "vcreated",
+    "body": ["created () {", "\t$[];", "},"],
+    "description": "created lifecycle method"
+  },
+  "Vue Lifecycle beforeMount": {
+    "prefix": "vbeforemount",
+    "body": ["beforeMount () {", "\t$[];", "},"],
+    "description": "beforeMount lifecycle method"
+  },
+  "Vue Lifecycle mounted": {
+    "prefix": "vmounted",
+    "body": ["mounted () {", "\t$[];", "},"],
+    "description": "mounted lifecycle method"
+  },
+  "Vue Lifecycle beforeUpdate": {
+    "prefix": "vbeforeupdate",
+    "body": ["beforeUpdate () {", "\t$[];", "},"],
+    "description": "beforeUpdate lifecycle method"
+  },
+  "Vue Lifecycle updated": {
+    "prefix": "vupdated",
+    "body": ["updated () {", "\t$[];", "},"],
+    "description": "updated lifecycle method"
+  },
+  "Vue Lifecycle beforeDestroy": {
+    "prefix": "vbeforedestroy",
+    "body": ["beforeDestroy () {", "\t$[];", "},"],
+    "description": "beforeDestroy lifecycle method"
+  },
+  "Vue Lifecycle destroyed": {
+    "prefix": "vdestroyed",
+    "body": ["destroyed () {", "\t$[];", "},"],
+    "description": "destroyed lifecycle method"
+  },
+  "Vue Watchers": {
+    "prefix": "vwatcher",
+    "body": [
+      "watch: {",
+      "\t$[data]($[newValue], $[oldValue]) {",
+      "\t\t$[]",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher"
+  },
+  "Vue Watchers with Options": {
+    "prefix": "vwatcher-options",
+    "body": [
+      "watch: {",
+      "\t$[data]: {",
+      "\t\timmediate: $[true],",
+      "\t\tdeep: $[true],",
+      "\t\thandler($[newValue], $[oldValue]) {",
+      "\t\t\t$[]",
+      "\t\t}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher with options"
+  },
+  "Vue Props with Default": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "\t$[propName]: {",
+      "\t\ttype: $[Number],",
+      "\t\tdefault: $[]",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
+  "Vue Import File": {
+    "prefix": "vimport",
+    "body": ["import $[New] from '@/components/$[New].vue';"],
+    "description": "Import one component into another"
+  },
+  "Vue Import into the Component": {
+    "prefix": "vcomponents",
+    "body": ["components: {", "\t$[New],", "},"],
+    "description": "Import one component into another, within export statement"
+  },
+  "Vue Import Export": {
+    "prefix": "vimport-export",
+    "body": [
+      "import $[Name] from '@/components/$[Name].vue'",
+      "",
+      "export default {",
+      "\tcomponents: {",
+      "\t\t$[Name]",
+      "\t},",
+      "}"
+    ],
+    "description": "import a component and include it in export default"
+  },
+  "Vue MapState": {
+    "prefix": "vmapstate",
+    "body": [
+      "import { mapState } from 'vuex'",
+      "",
+      "export default {",
+      "\tcomputed: {",
+      "\t\t...mapState([",
+      "\t\t\t$['nameOfState'],",
+      "\t\t])",
+      "\t},",
+      "}"
+    ],
+    "description": "map getters inside a vue component"
+  },
+  "Vue MapGetters": {
+    "prefix": "vmapgetters",
+    "body": [
+      "import { mapGetters } from 'vuex'",
+      "",
+      "export default {",
+      "\tcomputed: {",
+      "\t\t...mapGetters([",
+      "\t\t\t$['nameOfGetter'],",
+      "\t\t])",
+      "\t},",
+      "}"
+    ],
+    "description": "mapgetters inside a vue component"
+  },
+  "Vue MapMutations": {
+    "prefix": "vmapmutations",
+    "body": [
+      "import { mapMutations } from 'vuex'",
+      "",
+      "export default {",
+      "\tmethods: {",
+      "\t\t...mapMutations([",
+      "\t\t\t$['nameOfMutation'], //also supports payload `this.nameOfMutation(amount)` ",
+      "\t\t])",
+      "\t},",
+      "}"
+    ],
+    "description": "mapmutations inside a vue component"
+  },
+  "Vue MapActions": {
+    "prefix": "vmapactions",
+    "body": [
+      "import { mapActions } from 'vuex'",
+      "",
+      "export default {",
+      "\tmethods: {",
+      "\t\t...mapActions([",
+      "\t\t\t$['nameOfAction'], //also supports payload `this.nameOfAction(amount)` ",
+      "\t\t])",
+      "\t},",
+      "}"
+    ],
+    "description": "mapactions inside a vue component"
+  },
+  "Vue Filter": {
+    "prefix": "vfilter",
+    "body": [
+      "filters: {",
+      "\t$[fnName]: function($[value]) {",
+      "\t\treturn $[value];",
+      "\t}",
+      "}"
+    ],
+    "description": "vue filter"
+  },
+  "Vue Mixin": {
+    "prefix": "vmixin",
+    "body": [
+      "const $[mixinName] = {",
+      "\tmounted() {",
+      "\t\tconsole.log('hello from mixin!')",
+      "\t},",
+      "}"
+    ],
+    "description": "vue mixin"
+  },
+  "Vue Use Mixin": {
+    "prefix": "vmixin-use",
+    "body": ["mixins: [$[mixinName]],"],
+    "description": "vue use mixin"
+  },
+  "Vue Custom Directive": {
+    "prefix": "vc-direct",
+    "body": [
+      "Vue.directive('$[directiveName]', {",
+      "\tbind(el, binding, vnode) {",
+      "\t\tel.style.$[arg] = binding.value.$[arg];",
+      "\t}",
+      "});"
+    ],
+    "description": "vue custom directive"
+  },
+  "Vue Import Library": {
+    "prefix": "vimport-lib",
+    "body": ["import { $[libName] } from '$[libName]'"],
+    "description": "import a library"
+  },
+  "Vue Import GSAP": {
+    "prefix": "vimport-gsap",
+    "body": ["import { TimelineMax, $[Ease] } from 'gsap'"],
+    "description":
+      "component methods options that dispatch an action from vuex store."
+  },
+  "Vue Transition Methods with JavaScript Hooks": {
+    "prefix": "vanimhook-js",
+    "body": [
+      "beforeEnter(el) {",
+      "\tconsole.log('beforeEnter');",
+      "},",
+      "enter(el, done) {",
+      "\tconsole.log('enter');",
+      "\tdone();",
+      "},",
+      "beforeLeave(el) {",
+      "\tconsole.log('beforeLeave');",
+      "},",
+      "leave(el, done) {",
+      "\tconsole.log('leave');",
+      "\tdone();",
+      "},"
+    ],
+    "description": "transition component js hooks"
+  },
+  "Vue Commit Vuex Store in Methods": {
+    "prefix": "vcommit",
+    "body": [
+      "$[mutationName]() {",
+      "\tthis.$store.commit('$[mutationName]', $[payload])",
+      "}"
+    ],
+    "description": "commit to vuex store in methods for mutation"
+  },
+  "Vue Dispatch Vuex Store in Methods": {
+    "prefix": "vdispatch",
+    "body": [
+      "$[actionName]() {",
+      "\tthis.$store.dispatch('$[actionName]', $[payload])",
+      "}"
+    ],
+    "description": "dispatch to vuex store in methods for action"
+  },
+  "Incrementer": {
+    "prefix": "vinc",
+    "body": ["return $[this.num] += $[1]"],
+    "description": "increment"
+  },
+  "Decrementer": {
+    "prefix": "vdec",
+    "body": ["return $[this.num] -= $[1]"],
+    "description": "decrement"
+  },
+  "Unit Test": {
+    "prefix": "vtest",
+    "body": [
+      "import Vue from 'vue'",
+      "import $[HelloWorld] from './components/$[HelloWorld]'",
+      "",
+      "describe('$[HelloWorld].vue', () => {",
+      "\tit('$[should render correct contents]', () => {",
+      "\t\tconst Constructor = Vue.extend($[HelloWorld])",
+      "\t\tconst vm = new Constructor().$mount()",
+      "\t\texpect(vm.$el.querySelector('.hello h1').textContent)",
+      "\t\t\t.to.equal($['Welcome to Your Vue.js App'])",
+      "\t})",
+      "})"
+    ],
+    "description": "unit test component"
+  },
+  "Vue.config.js Import": {
+    "prefix": "vconfig",
+    "body": [
+      "module.exports = {",
+      "\tcss: {",
+      "\t\tloaderOptions: {",
+      "\t\t\t$[sass]: {",
+      "\t\t\t\tdata: `$[@import '@/styles/_variables.scss';]`",
+      "\t\t\t}",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "vue.config.js"
+  }
+}

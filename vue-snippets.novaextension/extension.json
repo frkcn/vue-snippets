@@ -1,0 +1,18 @@
+{
+    "identifier": "frkcn.vuesnippets",
+    "name": "vue-snippets",
+    "vendor": "frkcn",
+    "description": "Vue snippets for panic nova code editor.",
+    "version": "0.1.0",
+    "categories": [],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:javascript"
+    ],
+    
+    "entitlements": {
+        "files": "readwrite"
+    }
+}

@@ -1,0 +1,88 @@
+{
+	"Vue Single File Component": {
+		"prefix": "vbase",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script>",
+			"\texport default {",
+			"\t\t$[]",
+			"\t}",
+			"</script>",
+			"",
+			"<style lang=\"scss\" scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File with SCSS"
+	},
+	"Vue Single File Component with postcss": {
+		"prefix": "vbase-pcss",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script>",
+			"\texport default {",
+			"\t\t$[]",
+			"\t}",
+			"</script>",
+			"",
+			"<style lang=\"postcss\" scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File with PostCSS"
+	},
+	"Vue Single File Component with Css": {
+		"prefix": "vbase-css",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script>",
+			"\texport default {",
+			"\t\t$[]",
+			"\t}",
+			"</script>",
+			"",
+			"<style scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File with CSS"
+	},
+	"Vue Single File Component with Typescript": {
+		"prefix": "vbase-ts",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"",
+			"\t</div>",
+			"</template>",
+			"",
+			"<script lang=\"ts\">",
+			"\timport Vue from 'vue'",
+			"",
+        	"\texport default Vue.extend({",
+			"\t\t$[]",
+			"\t})",
+			"</script>",
+			"",
+			"<style scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File with Typescript"
+	}
+}
