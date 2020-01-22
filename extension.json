@@ -1,0 +1,27 @@
+{
+    "identifier": "frkcn.vuesnippet",
+    "name": "vue-snippet",
+    "vendor": "frkcn",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": [],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:javascript"
+    ],
+    
+    "entitlements": {
+        "files": "readwrite"
+    },
+    
+    "commands": {
+        "editor": [
+		    {
+		    	"title": "Foobar",
+		    	"command": "vue-snippet.insertFoobar"
+		    }
+	    ]
+    }
+}
