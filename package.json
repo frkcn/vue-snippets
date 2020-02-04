@@ -2,7 +2,7 @@
   "name": "vue-snippets",
   "displayName": "Vue Snippets",
   "description": "Vue snippets were built to increase your developer experience in Panic Nova.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "frkcn",
   "repository": {
     "type": "git",

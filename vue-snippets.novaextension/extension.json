@@ -3,9 +3,13 @@
     "name": "vue-snippets",
     "vendor": "frkcn",
     "description": "Vue snippets for panic nova code editor.",
-    "version": "0.1.0",
-    "categories": ["Completions"],
+    "version": "0.2.0",
+    "categories": ["completions"],
     
+    "homepage": "https://github.com/frkcn/vue-snippets",
+	"repository": "https://github.com/frkcn/vue-snippets",
+	"bugs": "https://github.com/frkcn/vue-snippets/issues",
+
     "main": "main.js",
     
     "activationEvents": [
