@@ -19,8 +19,6 @@ class VueTemplateRegistrar
 	};
 }
 
-nova.assistants.registerCompletionAssistant({
-	"syntax": "html"
-}, new VueTemplateRegistrar());
+nova.assistants.registerCompletionAssistant("jsx", new VueTemplateRegistrar());
 
 module.exports = VueTemplateRegistrar;

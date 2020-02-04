@@ -4,7 +4,7 @@
     "vendor": "frkcn",
     "description": "Vue snippets for panic nova code editor.",
     "version": "0.1.0",
-    "categories": [],
+    "categories": ["Completions"],
     
     "main": "main.js",
     

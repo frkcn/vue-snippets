@@ -19,8 +19,6 @@ class VueScriptRegistrar
 	};
 }
 
-nova.assistants.registerCompletionAssistant({
-	"syntax": "javascript"
-}, new VueScriptRegistrar());
+nova.assistants.registerCompletionAssistant("jsx", new VueScriptRegistrar());
 
 module.exports = VueScriptRegistrar;
